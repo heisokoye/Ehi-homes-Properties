@@ -34,7 +34,7 @@ const About = () => {
         {/* LEFT IMAGE */}
         <div className="lg:w-1/2 w-full relative hidden md:block">
 
-          <div className="absolute top-6 left-6 w-full h-full rounded-3xl bg-gradient-to-br from-[#B88A3E]/20 to-[#2F4324]/10 -z-10" />
+          <div className="absolute top-6 left-6 w-full h-full rounded-3xl bg-linear-to-br from-[#B88A3E]/20 to-[#2F4324]/10 -z-10" />
 
           <div className="rounded-3xl overflow-hidden shadow-2xl group">
             <img
