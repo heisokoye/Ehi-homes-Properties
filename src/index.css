@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom color tokens matching logo and design */
+:root {
+  --primary-green: #2F4324;
+  --primary-green-hover: #223219;
+  --accent-gold: #B68943;
+  --accent-gold-hover: #9c7333;
+}
