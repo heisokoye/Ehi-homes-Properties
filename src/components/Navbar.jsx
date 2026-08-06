@@ -242,7 +242,7 @@ const Navbar = () => {
 
       {isMobileMenuOpen && (
 
-        <div className="md:hidden bg-white/95 backdrop-blur-md border-t shadow-xl px-5 py-6 space-y-4">
+        <div className="md:hidden bg-white/95 backdrop-blur-md  shadow-xl px-5 py-6 space-y-4">
 
 
           {navLinks.map((link) => (

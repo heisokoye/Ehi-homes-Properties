@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
 
                 {/* Hero Left Content */}
-                <div className="w-[92%] mx-auto relative z-10">
+                <div className="w-[92%] mx-auto relative z-10 -translate-y-12">
                 <div className="w-full lg:w-[50%] text-left">
 
                     {/* Small Label */}

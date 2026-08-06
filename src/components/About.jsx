@@ -64,7 +64,7 @@ const About = () => {
           {/* Heading */}
           <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-[#2F4324]">
 
-            A real estate partner built on{" "}
+            A real estate company built on{" "}
             <span className="text-[#B88A3E]">
               trust
             </span>

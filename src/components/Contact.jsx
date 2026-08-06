@@ -36,7 +36,7 @@ const Contact = () => {
           <div className="mt-10 space-y-6">
 
             <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
+              <div className="w-14 h-14 shrink-0 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
                 <Phone className="text-[#B88A3E]" size={20} />
               </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
+              <div className="w-14 h-14 shrink-0 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
                 <Mail className="text-[#B88A3E]" size={20} />
               </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
+              <div className="w-14 h-14 shrink-0 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
                 <MapPin className="text-[#B88A3E]" size={20} />
               </div>
 
@@ -84,7 +84,7 @@ const Contact = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
+              <div className="w-14 h-14 shrink-0 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
                 <Clock className="text-[#B88A3E]" size={20} />
               </div>
 
@@ -103,7 +103,7 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="lg:w-3/5 bg-neutral-100/60 rounded-3xl p-10">
+        <div className="lg:w-3/5  rounded-3xl p-10 border border-neutral-300">
 
           <h3 className="text-3xl font-bold text-[#2F4324] mb-8">
             Send us a Message
