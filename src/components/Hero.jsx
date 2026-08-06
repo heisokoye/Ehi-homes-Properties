@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
 
     return (
-        <div className="min-h-screen bg-white font-['Plus_Jakarta_Sans',sans-serif] text-gray-900 overflow-x-hidden pt-20 sm:pt-24">
+        <div className="min-h-screen bg-white font-['Plus_Jakarta_Sans',sans-serif] text-gray-900 overflow-x-hidden ">
 
             {/* HERO SECTION - Exact Match to Reference Image */}
-            <section id="home" className="relative w-full min-h-screen lg:min-h-screen flex items-center overflow-hidden bg-white scroll-mt-24">
+            <section id="home" className="relative w-full h-screen flex items-center overflow-hidden bg-white scroll-mt-24">
 
                 {/* Background Image Container - Right side building with seamless left fade */}
-                <div className="absolute inset-y-0 r`ight-0 w-full lg:w-[65%] h-full z-0 flex items-center justify-end pointer-events-none">
+                <div className="absolute inset-y-0 right-0 w-full lg:w-[65%] h-full z-0 flex items-center justify-end pointer-events-none">
                     <div className="relative w-full h-full">
                         <img
                             src="/house_hero.png"
