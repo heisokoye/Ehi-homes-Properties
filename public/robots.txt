@@ -1,0 +1,6 @@
+# EHI Homes & Properties Ltd Robots Directives
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://ehihomes.com/sitemap.xml

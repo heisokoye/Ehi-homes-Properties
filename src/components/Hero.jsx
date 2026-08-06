@@ -7,14 +7,17 @@ const Hero = () => {
         <div className="min-h-screen bg-white font-['Plus_Jakarta_Sans',sans-serif] text-gray-900 overflow-x-hidden ">
 
             {/* HERO SECTION - Exact Match to Reference Image */}
-            <section id="home" className="relative w-full h-screen flex items-center overflow-hidden bg-white scroll-mt-24">
+            <section id="home" aria-label="Hero Section - Real Estate & Property Investments in Lagos" className="relative w-full h-screen flex items-center overflow-hidden bg-white scroll-mt-24">
 
                 {/* Background Image Container - Right side building with seamless left fade */}
                 <div className="absolute inset-y-0 right-0 w-full lg:w-[65%] h-full z-0 flex items-center justify-end pointer-events-none">
                     <div className="relative w-full h-full">
                         <img
                             src="/house_hero.png"
-                            alt="EHI Homes Modern Luxury Architecture"
+                            alt="EHI Homes & Properties Ltd - Modern Luxury Real Estate Architecture in Lagos Nigeria"
+                            width="1200"
+                            height="800"
+                            fetchPriority="high"
                             className="w-full h-full object-cover object-left lg:object-center"
                         />
                         {/* Left to right gradient fade overlay to make text area pure crisp white */}
@@ -35,7 +38,7 @@ const Hero = () => {
                     <span className="w-10 h-[2px] bg-[#B88A3E]" />
 
                     <span className="text-[#B88A3E] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">
-                        EHI Homes & Properties
+                        EHI Homes &amp; Properties Ltd
                     </span>
                     </div>
 
@@ -47,11 +50,17 @@ const Hero = () => {
                     </span>
                     </h1>
 
+                    {/* Paragraph for rich snippet search relevance */}
+                    <p className="mt-4 text-gray-700 text-base sm:text-lg max-w-xl font-normal leading-relaxed">
+                        Your premier real estate partner in Lagos, Nigeria. We specialize in genuine, affordable, and well-documented land and property investments.
+                    </p>
+
                     {/* Buttons */}
-                    <div className="flex flex-wrap items-center gap-4 mt-9">
+                    <div className="flex flex-wrap items-center gap-4 mt-8">
 
                     <a
                         href="#contact"
+                        title="Contact EHI Homes & Properties"
                         onClick={(e) => {
                             e.preventDefault();
                             const el = document.getElementById('contact');

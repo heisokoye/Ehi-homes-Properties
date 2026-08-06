@@ -5,6 +5,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
+      aria-label="Contact EHI Homes & Properties Ltd"
       className="relative bg-white py-24 overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]"
     >
       {/* Decorative Rings */}
@@ -41,14 +42,14 @@ const Contact = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#2F4324]">
+                <h3 className="font-semibold text-[#2F4324]">
                   Phone
-                </h4>
+                </h3>
                 <p className="text-gray-600">
-                  +234 903 712 5053
+                  <a href="tel:+2349037125053" className="hover:text-[#B88A3E] transition" title="Call EHI Homes">+234 903 712 5053</a>
                 </p>
                 <p className="text-gray-600">
-                  +234 916 196 6606
+                  <a href="tel:+2349161966606" className="hover:text-[#B88A3E] transition" title="Call EHI Homes">+234 916 196 6606</a>
                 </p>
               </div>
             </div>
@@ -59,11 +60,13 @@ const Contact = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#2F4324]">
+                <h3 className="font-semibold text-[#2F4324]">
                   Email
-                </h4>
+                </h3>
                 <p className="text-gray-600 wrap-break-word text-sm">
-                  ehihomesandpropertiesltd@gmail.com
+                  <a href="mailto:ehihomesandpropertiesltd@gmail.com" className="hover:text-[#B88A3E] transition" title="Email EHI Homes">
+                    ehihomesandpropertiesltd@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
@@ -74,12 +77,12 @@ const Contact = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#2F4324]">
-                  Office
-                </h4>
-                <p className="text-gray-600">
+                <h3 className="font-semibold text-[#2F4324]">
+                  Office Address
+                </h3>
+                <address className="text-gray-600 not-italic">
                   Five Point Business Hub, Opposite Community Primary School, Isheri Olofu Grace Land, Isheri, Lagos State, Nigeria.
-                </p>
+                </address>
               </div>
             </div>
 
@@ -89,9 +92,9 @@ const Contact = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#2F4324]">
+                <h3 className="font-semibold text-[#2F4324]">
                   Working Hours
-                </h4>
+                </h3>
                 <p className="text-gray-600">
                   Mon - Fri: 8:00 AM – 5:00 PM
                 </p>
@@ -113,57 +116,78 @@ const Contact = () => {
             action="https://formsubmit.co/techokoye@gmail.com"
             method="POST"
             className="space-y-6"
+            aria-label="Property Enquiry Form"
           >
 
             {/* Hidden Inputs */}
             <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_subject" value="New Property Enquiry" />
+            <input type="hidden" name="_subject" value="New Property Enquiry - EHI Homes" />
 
             <div className="grid md:grid-cols-2 gap-6">
-              <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                required
-                className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
-              />
+              <div>
+                <label htmlFor="contact-name" className="sr-only">Full Name</label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                  className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
+                />
+              </div>
 
+              <div>
+                <label htmlFor="contact-email" className="sr-only">Email Address</label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                  className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="contact-phone" className="sr-only">Phone Number</label>
               <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
+                id="contact-phone"
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
                 required
                 className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
               />
             </div>
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required
-              className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
-            />
+            <div>
+              <label htmlFor="contact-subject" className="sr-only">Subject</label>
+              <input
+                id="contact-subject"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+                className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
+              />
+            </div>
 
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              required
-              className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
-            />
-
-            <textarea
-              name="message"
-              rows={6}
-              placeholder="Tell us about the property you're looking for..."
-              required
-              className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none resize-none focus:border-[#B88A3E]"
-            />
+            <div>
+              <label htmlFor="contact-message" className="sr-only">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows={6}
+                placeholder="Tell us about the property you're looking for..."
+                required
+                className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none resize-none focus:border-[#B88A3E]"
+              />
+            </div>
 
             <button
               type="submit"
-              className="bg-[#2F4324] text-white px-8 py-4 rounded-xl hover:bg-[#3d5a2d] transition"
+              className="bg-[#2F4324] text-white px-8 py-4 rounded-xl hover:bg-[#3d5a2d] transition cursor-pointer"
             >
               Send Message
             </button>

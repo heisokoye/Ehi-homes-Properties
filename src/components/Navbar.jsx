@@ -111,11 +111,15 @@ const Navbar = () => {
           href="#home"
           onClick={(e) => handleNavClick(e, "home")}
           className="flex items-center cursor-pointer"
+          aria-label="EHI Homes & Properties Ltd Home Page"
+          title="EHI Homes & Properties Ltd - Real Estate & Luxury Lands in Lagos"
         >
 
           <img
             src="/logo.png"
-            alt="EHI Homes and Properties"
+            alt="EHI Homes & Properties Ltd Logo - Real Estate Company in Lagos"
+            width="200"
+            height="70"
             className="h-12 sm:h-16 lg:h-[70px] w-auto object-contain transition-transform duration-300 hover:scale-105"
           />
 
@@ -129,7 +133,7 @@ const Navbar = () => {
 
 
           {/* NAVIGATION */}
-          <nav className="flex items-center gap-8 lg:gap-10">
+          <nav className="flex items-center gap-8 lg:gap-10" aria-label="Main Navigation">
 
             {navLinks.map((link) => {
 
@@ -151,6 +155,7 @@ const Navbar = () => {
                       ? "text-[#2F4324] font-bold"
                       : "text-gray-700 hover:text-[#2F4324]"
                   }`}
+                  title={`${link.name} - EHI Homes`}
                 >
 
                   {link.name}
@@ -179,6 +184,7 @@ const Navbar = () => {
               handleNavClick(e, "contact")
             }
             className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#2F4324] text-white text-sm font-semibold transition-all duration-300 hover:bg-[#B88A3E] hover:shadow-lg"
+            title="Contact EHI Homes & Properties Ltd"
           >
 
             Get In Touch
@@ -197,6 +203,8 @@ const Navbar = () => {
           onClick={() =>
             setIsMobileMenuOpen(!isMobileMenuOpen)
           }
+          aria-label="Toggle Navigation Menu"
+          aria-expanded={isMobileMenuOpen}
           className="md:hidden ml-auto p-2 rounded-lg text-gray-800 hover:text-[#2F4324]"
         >
 

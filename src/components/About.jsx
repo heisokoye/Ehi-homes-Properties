@@ -14,7 +14,9 @@ const About = () => {
 
   return (
     <section
-      id="about"
+      id="about"    
+      aria-label="About EHI Homes & Properties Ltd"
+
       className="relative w-full bg-white font-['Plus_Jakarta_Sans',sans-serif] py-24 overflow-hidden"
     >
 
