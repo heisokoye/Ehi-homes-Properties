@@ -38,7 +38,7 @@ const About = () => {
             <img
               src="/parlour.jpg"
               alt="EHI Homes Property"
-              className="w-full h-[550px] object-cover transition duration-700 group-hover:scale-105"
+              className="w-full h-[300px] md:h-[550px] object-cover transition duration-700 group-hover:scale-105"
             />
           </div>
 
@@ -134,7 +134,7 @@ const About = () => {
 
 
           {/* Core Values */}
-          <div>
+          <div id="why-us" className="scroll-mt-24">
 
             <div className="flex items-center gap-3 mb-6">
 

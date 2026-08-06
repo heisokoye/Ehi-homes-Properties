@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="min-h-screen bg-white font-['Plus_Jakarta_Sans',sans-serif] text-gray-900 overflow-x-hidden pt-20 sm:pt-24">
 
             {/* HERO SECTION - Exact Match to Reference Image */}
-            <section className="relative w-full min-h-[85vh] lg:min-h-screen flex items-center overflow-hidden bg-white">
+            <section id="home" className="relative w-full min-h-[85vh] lg:min-h-screen flex items-center overflow-hidden bg-white scroll-mt-24">
 
                 {/* Background Image Container - Right side building with seamless left fade */}
                 <div className="absolute inset-y-0 right-0 w-full lg:w-[65%] h-full z-0 flex items-center justify-end pointer-events-none">
@@ -52,7 +52,18 @@ const Hero = () => {
 
                     <a
                         href="#contact"
-                        className="px-7 py-4 rounded-xl border border-[#B88A3E] text-[#B88A3E] font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-[#B88A3E] hover:text-white hover:-translate-y-1"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('contact');
+                            if (el) {
+                                const offset = 80;
+                                const bodyRect = document.body.getBoundingClientRect().top;
+                                const elementRect = el.getBoundingClientRect().top;
+                                const elementPosition = elementRect - bodyRect;
+                                window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
+                            }
+                        }}
+                        className="px-7 py-4 rounded-xl border border-[#B88A3E] text-[#B88A3E] font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-[#B88A3E] hover:text-white hover:-translate-y-1 cursor-pointer"
                     >
                         Contact Us
                     </a>
