@@ -30,7 +30,7 @@ const About = () => {
 
 
         {/* LEFT IMAGE */}
-        <div className="lg:w-1/2 w-full relative">
+        <div className="lg:w-1/2 w-full relative hidden md:block">
 
           <div className="absolute top-6 left-6 w-full h-full rounded-3xl bg-gradient-to-br from-[#B88A3E]/20 to-[#2F4324]/10 -z-10" />
 
