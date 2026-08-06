@@ -103,47 +103,66 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="lg:w-3/5  rounded-3xl p-10 border border-neutral-300">
+        <div className="lg:w-3/5 rounded-3xl p-10 border border-neutral-300">
 
           <h3 className="text-3xl font-bold text-[#2F4324] mb-8">
             Send us a Message
           </h3>
 
-          <form className="space-y-6">
+          <form
+            action="https://formsubmit.co/techokoye@gmail.com"
+            method="POST"
+            className="space-y-6"
+          >
+
+            {/* Hidden Inputs */}
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value="New Property Enquiry" />
 
             <div className="grid md:grid-cols-2 gap-6">
               <input
                 type="text"
+                name="name"
                 placeholder="Full Name"
+                required
                 className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
               />
 
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address"
+                required
                 className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
               />
             </div>
 
             <input
               type="tel"
+              name="phone"
               placeholder="Phone Number"
+              required
               className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
             />
 
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
+              required
               className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none focus:border-[#B88A3E]"
             />
 
             <textarea
+              name="message"
               rows={6}
               placeholder="Tell us about the property you're looking for..."
+              required
               className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none resize-none focus:border-[#B88A3E]"
             />
 
             <button
+              type="submit"
               className="bg-[#2F4324] text-white px-8 py-4 rounded-xl hover:bg-[#3d5a2d] transition"
             >
               Send Message
