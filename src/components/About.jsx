@@ -36,7 +36,7 @@ const About = () => {
 
           <div className="rounded-3xl overflow-hidden shadow-2xl group">
             <img
-              src="/parlour.jpg"
+              src="/parlour.webp"
               alt="EHI Homes Property"
               className="w-full h-[300px] md:h-[550px] object-cover transition duration-700 group-hover:scale-105"
             />
