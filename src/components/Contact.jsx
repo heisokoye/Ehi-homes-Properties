@@ -62,7 +62,7 @@ const Contact = () => {
                 <h4 className="font-semibold text-[#2F4324]">
                   Email
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 wrap-break-word">
                   ehihomesandpropertiesltd@gmail.com
                 </p>
               </div>
