@@ -78,7 +78,7 @@ const Contact = () => {
                   Office
                 </h4>
                 <p className="text-gray-600">
-                  Five Point Business Hub, Opposite Community Primary School, Isheri Olofu GRace Land, Isheri, Lagos State, Nigeria.
+                  Five Point Business Hub, Opposite Community Primary School, Isheri Olofu Grace Land, Isheri, Lagos State, Nigeria.
                 </p>
               </div>
             </div>
