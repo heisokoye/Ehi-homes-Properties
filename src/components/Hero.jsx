@@ -35,10 +35,10 @@ const Hero = () => {
 
                     {/* Small Label */}
                     <div className="flex items-center gap-3 mb-6">
-                    <span className="w-10 h-[2px] bg-[#B88A3E]" />
+                    <span className="w-10 h-0.5 bg-[#B88A3E]" />
 
                     <span className="text-[#B88A3E] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">
-                        EHI Homes &amp; Properties Ltd — Real Estate Agency Lagos
+                        EHI Homes &amp; Properties Ltd
                     </span>
                     </div>
 
@@ -52,7 +52,7 @@ const Hero = () => {
 
                     {/* Paragraph for rich snippet search relevance */}
                     <p className="mt-4 text-gray-700 text-base sm:text-lg max-w-xl font-normal leading-relaxed">
-                        Your trusted real estate partner in Lagos, Nigeria. We specialize in genuine, affordable, and well-documented land and property investments in Isheri, Lagos and across Nigeria.
+                        A trusted real estate company committed to providing reliable property solutions across Nigeria.
                     </p>
 
                     {/* Buttons */}

@@ -12,7 +12,6 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", targetId: "home", path: "/#home" },
     { name: "About Us", targetId: "about", path: "/#about" },
-    { name: "FAQ", targetId: "faq", path: "/#faq" },
   ];
 
 
@@ -121,7 +120,7 @@ const Navbar = () => {
             alt="EHI Homes & Properties Ltd Logo - Real Estate Company in Lagos"
             width="200"
             height="70"
-            className="h-12 sm:h-16 lg:h-[70px] w-auto object-contain transition-transform duration-300 hover:scale-105"
+            className="h-12 sm:h-16 lg:h-17.5 w-auto object-contain transition-transform duration-300 hover:scale-105"
           />
 
         </a>
@@ -163,7 +162,7 @@ const Navbar = () => {
 
 
                   {isActive && (
-                    <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#B88A3E] rounded-full" />
+                    <span className="absolute left-0 -bottom-2 w-full h-0.5 bg-[#B88A3E] rounded-full" />
                   )}
 
                 </a>

@@ -14,17 +14,17 @@ const About = () => {
 
   return (
     <section
-      id="about"    
+      id="about"
       aria-label="About EHI Homes & Properties Ltd"
 
       className="relative w-full bg-white font-['Plus_Jakarta_Sans',sans-serif] py-24 overflow-hidden"
     >
 
       {/* Decorative Rings */}
-      <div className="pointer-events-none absolute -top-28 -right-28 w-[420px] h-[420px] rounded-full border-[50px] border-[#B88A3E]/10" />
-      <div className="pointer-events-none absolute -top-16 -right-16 w-[260px] h-[260px] rounded-full border-[28px] border-[#2F4324]/10" />
+      <div className="pointer-events-none absolute -top-28 -right-28 w-105 h-105 rounded-full border-50 border-[#B88A3E]/10" />
+      <div className="pointer-events-none absolute -top-16 -right-16 w-65 h-65 rounded-full border-28 border-[#2F4324]/10" />
 
-      <div className="pointer-events-none absolute -bottom-32 -left-32 w-[450px] h-[450px] rounded-full border-[55px] border-[#B88A3E]/10" />
+      <div className="pointer-events-none absolute -bottom-32 -left-32 w-112.5 h-112.5 rounded-full border-55 border-[#B88A3E]/10" />
 
 
       {/* Content */}
@@ -43,7 +43,7 @@ const About = () => {
               width="800"
               height="550"
               loading="lazy"
-              className="w-full h-[300px] md:h-[550px] object-cover transition duration-700 group-hover:scale-105"
+              className="w-full h-75 md:h-137.5 object-cover transition duration-700 group-hover:scale-105"
             />
           </div>
 
@@ -57,7 +57,7 @@ const About = () => {
 
           {/* Label */}
           <div className="flex items-center gap-3 mb-5">
-            <span className="w-12 h-[2px] bg-[#B88A3E]" />
+            <span className="w-12 h-0.5 bg-[#B88A3E]" />
 
             <span className="uppercase tracking-[0.3em] text-sm font-semibold text-[#B88A3E]">
               Who We Are
@@ -91,7 +91,7 @@ const About = () => {
 
 
           {/* Divider */}
-          <div className="w-full h-px bg-gradient-to-r from-[#B88A3E]/40 to-transparent my-10" />
+          <div className="w-full h-px bg-linear-to-r from-[#B88A3E]/40 to-transparent my-10" />
 
 
 
@@ -143,7 +143,7 @@ const About = () => {
 
             <div className="flex items-center gap-3 mb-6">
 
-              <span className="w-10 h-[2px] bg-[#B88A3E]" />
+              <span className="w-10 h-0.5 bg-[#B88A3E]" />
 
               <span className="uppercase tracking-[0.25em] text-sm font-semibold text-[#B88A3E]">
                 Our Core Values
