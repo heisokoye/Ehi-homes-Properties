@@ -12,6 +12,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", targetId: "home", path: "/#home" },
     { name: "About Us", targetId: "about", path: "/#about" },
+    { name: "FAQ", targetId: "faq", path: "/#faq" },
   ];
 
 
@@ -19,7 +20,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 30);
 
-      const sections = ["home", "about", "why-us", "contact"];
+      const sections = ["home", "about", "why-us", "faq", "contact"];
       const scrollPosition = window.scrollY + 150;
 
       for (const sectionId of sections) {

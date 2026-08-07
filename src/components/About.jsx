@@ -39,7 +39,10 @@ const About = () => {
           <div className="rounded-3xl overflow-hidden shadow-2xl group">
             <img
               src="/parlour.webp"
-              alt="EHI Homes Property"
+              alt="Luxury modern living room interior design by EHI Homes & Properties Ltd - Real Estate Agency Lagos"
+              width="800"
+              height="550"
+              loading="lazy"
               className="w-full h-[300px] md:h-[550px] object-cover transition duration-700 group-hover:scale-105"
             />
           </div>

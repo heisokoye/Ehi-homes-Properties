@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://ehihomes.com/sitemap.xml
+Sitemap: https://ehihomes.ng/sitemap.xml

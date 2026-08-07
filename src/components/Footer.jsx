@@ -53,26 +53,26 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-[#B88A3E] mb-4">Contact Information</h3>
-          <ul className="space-y-3 text-sm text-gray-300">
-            <li className="flex items-start gap-3">
+          <address className="space-y-3 text-sm text-gray-300 not-italic block">
+            <div className="flex items-start gap-3">
               <MapPin size={18} className="text-[#B88A3E] shrink-0 mt-0.5" />
               <span>Five Point Business Hub, Opp. Community Primary School, Isheri, Lagos, Nigeria.</span>
-            </li>
-            <li className="flex items-center gap-3">
+            </div>
+            <div className="flex items-center gap-3">
               <Phone size={18} className="text-[#B88A3E] shrink-0" />
               <div>
                 <a href="tel:+2349037125053" className="hover:text-[#B88A3E] transition">+234 903 712 5053</a>
                 <span className="mx-1">|</span>
                 <a href="tel:+2349161966606" className="hover:text-[#B88A3E] transition">+234 916 196 6606</a>
               </div>
-            </li>
-            <li className="flex items-center gap-3">
+            </div>
+            <div className="flex items-center gap-3">
               <Mail size={18} className="text-[#B88A3E] shrink-0" />
               <a href="mailto:ehihomesandpropertiesltd@gmail.com" className="hover:text-[#B88A3E] transition break-all">
                 ehihomesandpropertiesltd@gmail.com
               </a>
-            </li>
-          </ul>
+            </div>
+          </address>
         </div>
       </div>
 

@@ -14,7 +14,7 @@ const Hero = () => {
                     <div className="relative w-full h-full">
                         <img
                             src="/house_hero.png"
-                            alt="EHI Homes & Properties Ltd - Modern Luxury Real Estate Architecture in Lagos Nigeria"
+                            alt="Modern 4-bedroom luxury duplex exterior with contemporary glass facade, Isheri Lagos"
                             width="1200"
                             height="800"
                             fetchPriority="high"
@@ -38,7 +38,7 @@ const Hero = () => {
                     <span className="w-10 h-[2px] bg-[#B88A3E]" />
 
                     <span className="text-[#B88A3E] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">
-                        EHI Homes &amp; Properties Ltd
+                        EHI Homes &amp; Properties Ltd — Real Estate Agency Lagos
                     </span>
                     </div>
 
@@ -52,7 +52,7 @@ const Hero = () => {
 
                     {/* Paragraph for rich snippet search relevance */}
                     <p className="mt-4 text-gray-700 text-base sm:text-lg max-w-xl font-normal leading-relaxed">
-                        Your premier real estate partner in Lagos, Nigeria. We specialize in genuine, affordable, and well-documented land and property investments.
+                        Your trusted real estate partner in Lagos, Nigeria. We specialize in genuine, affordable, and well-documented land and property investments in Isheri, Lagos and across Nigeria.
                     </p>
 
                     {/* Buttons */}

@@ -9,9 +9,9 @@
     <meta name="theme-color" content="#2F4324" />
 
     <!-- Primary Search Engine SEO Meta Tags -->
-    <title>EHI Homes &amp; Properties Ltd | Real Estate &amp; Luxury Lands in Lagos, Nigeria</title>
-    <meta name="description" content="EHI Homes &amp; Properties Ltd helps individuals, families, and investors find secure real estate and land opportunities in Lagos, Nigeria through genuine, transparent, and well-documented solutions." />
-    <meta name="keywords" content="EHI Homes, real estate Lagos, buy land Isheri, property investment Nigeria, luxury homes Lagos, real estate agency Lagos, genuine land Lagos, EHI Homes and Properties" />
+    <title>EHI Homes &amp; Properties Ltd | Real Estate Agency &amp; Luxury Land in Lagos, Nigeria</title>
+    <meta name="description" content="EHI Homes &amp; Properties Ltd is a top real estate agency in Lagos, Nigeria offering genuine, secure, and affordable land and property investments in Isheri, Lagos and beyond." />
+    <meta name="keywords" content="EHI Homes, real estate Lagos, buy land Isheri, property investment Nigeria, luxury homes Lagos, real estate agency Lagos, genuine land Lagos, EHI Homes and Properties, land title certificate lagos" />
     <meta name="author" content="EHI Homes &amp; Properties Ltd" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://ehihomes.com/" />
@@ -41,40 +41,143 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Schema.org JSON-LD Structured Data for Search Engine Rich Snippets -->
+    <!-- Schema.org JSON-LD Structured Data for Rich Snippets -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "RealEstateAgent",
-        "name": "EHI Homes & Properties Ltd",
-        "alternateName": "EHI Homes",
-        "url": "https://ehihomes.com/",
-        "logo": "https://ehihomes.com/logo.png",
-        "image": "https://ehihomes.com/house_hero.png",
-        "description": "EHI Homes & Properties Ltd helps individuals, families, and investors find secure real estate and land opportunities in Lagos, Nigeria through genuine, transparent, and well-documented solutions.",
-        "telephone": ["+2349037125053", "+2349161966606"],
-        "email": "ehihomesandpropertiesltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Five Point Business Hub, Opposite Community Primary School, Isheri Olofu Grace Land",
-          "addressLocality": "Isheri",
-          "addressRegion": "Lagos State",
-          "addressCountry": "NG"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "6.6433",
-          "longitude": "3.3769"
-        },
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "08:00",
-            "closes": "17:00"
+            "@type": "RealEstateAgent",
+            "@id": "https://ehihomes.com/#organization",
+            "name": "EHI Homes & Properties Ltd",
+            "alternateName": "EHI Homes",
+            "url": "https://ehihomes.com/",
+            "logo": "https://ehihomes.com/logo.png",
+            "image": "https://ehihomes.com/house_hero.png",
+            "description": "EHI Homes & Properties Ltd helps individuals, families, and investors find secure real estate and land opportunities in Lagos, Nigeria through genuine, transparent, and well-documented solutions.",
+            "telephone": ["+2349037125053", "+2349161966606"],
+            "email": "ehihomesandpropertiesltd@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Five Point Business Hub, Opposite Community Primary School, Isheri Olofu Grace Land",
+              "addressLocality": "Isheri",
+              "addressRegion": "Lagos State",
+              "addressCountry": "NG"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "6.6433",
+              "longitude": "3.3769"
+            },
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Lagos State"
+              },
+              {
+                "@type": "City",
+                "name": "Isheri"
+              },
+              {
+                "@type": "Country",
+                "name": "Nigeria"
+              }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "17:00"
+              }
+            ],
+            "priceRange": "$$"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://ehihomes.com/#website",
+            "url": "https://ehihomes.com/",
+            "name": "EHI Homes & Properties Ltd",
+            "publisher": {
+              "@id": "https://ehihomes.com/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://ehihomes.com/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ehihomes.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://ehihomes.com/#about"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Why Us",
+                "item": "https://ehihomes.com/#why-us"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "FAQ",
+                "item": "https://ehihomes.com/#faq"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Contact",
+                "item": "https://ehihomes.com/#contact"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://ehihomes.com/#faqpage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why should I buy land or property with EHI Homes & Properties Ltd?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EHI Homes & Properties Ltd provides 100% verified, genuine, and well-documented real estate and land opportunities in Lagos, Nigeria. We ensure all titles are free from government acquisition and third-party disputes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is EHI Homes & Properties Ltd located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our corporate head office is located at Five Point Business Hub, Opposite Community Primary School, Isheri Olofu Grace Land, Isheri, Lagos State, Nigeria."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What land documentations come with EHI Homes properties?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All EHI Homes properties come with authentic legal title documentation including Certificate of Ownership (C of O), Excision, Gazette, Deed of Assignment, and Registered Survey Plans depending on the specific estate."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can diaspora investors buy real estate with EHI Homes safely?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we specialize in seamless real estate transactions for Nigerians in the diaspora and international investors, complete with virtual video tours, verified legal documentation, and transparent allocation."
+                }
+              }
+            ]
           }
-        ],
-        "priceRange": "$$"
+        ]
       }
     </script>
   </head>

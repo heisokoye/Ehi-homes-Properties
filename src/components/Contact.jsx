@@ -34,7 +34,7 @@ const Contact = () => {
             our team is ready to guide you every step of the way.
           </p>
 
-          <div className="mt-10 space-y-6">
+          <address className="mt-10 space-y-6 not-italic">
 
             <div className="flex gap-4">
               <div className="w-14 h-14 shrink-0 rounded-full bg-[#B88A3E]/10 flex items-center justify-center">
@@ -80,9 +80,9 @@ const Contact = () => {
                 <h3 className="font-semibold text-[#2F4324]">
                   Office Address
                 </h3>
-                <address className="text-gray-600 not-italic">
+                <p className="text-gray-600">
                   Five Point Business Hub, Opposite Community Primary School, Isheri Olofu Grace Land, Isheri, Lagos State, Nigeria.
-                </address>
+                </p>
               </div>
             </div>
 
@@ -101,7 +101,7 @@ const Contact = () => {
               </div>
             </div>
 
-          </div>
+          </address>
 
         </div>
 
