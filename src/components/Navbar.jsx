@@ -12,6 +12,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", targetId: "home", path: "/#home" },
     { name: "About Us", targetId: "about", path: "/#about" },
+    { name: "Why Choose Us", targetId: "why-us", path: "/#why-us" },
   ];
 
 
@@ -99,7 +100,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-md py-3"
-          : "bg-white/40 backdrop-blur-sm py-5 sm:py-6"
+          : "bg-white/40 backdrop-blur-sm py-3 sm:py-6"
       }`}
     >
 
@@ -112,7 +113,7 @@ const Navbar = () => {
           onClick={(e) => handleNavClick(e, "home")}
           className="flex items-center cursor-pointer"
           aria-label="EHI Homes & Properties Ltd Home Page"
-          title="EHI Homes & Properties Ltd - Real Estate & Luxury Lands in Lagos"
+          title="EHI Homes & Properties Ltd"
         >
 
           <img

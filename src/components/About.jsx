@@ -145,9 +145,9 @@ const About = () => {
 
               <span className="w-10 h-0.5 bg-[#B88A3E]" />
 
-              <span className="uppercase tracking-[0.25em] text-sm font-semibold text-[#B88A3E]">
+              <h3 className="uppercase tracking-[0.25em] text-sm font-semibold text-[#B88A3E]">
                 Our Core Values
-              </span>
+              </h3>
 
             </div>
 

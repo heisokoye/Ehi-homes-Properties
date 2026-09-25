@@ -11,8 +11,8 @@ const Home = () => {
       <SEO 
         title="EHI Homes & Properties Ltd | Real Estate Agency & Luxury Land in Lagos, Nigeria"
         description="EHI Homes & Properties Ltd helps individuals, families, and investors find genuine, secure, and affordable land and luxury property opportunities in Isheri and across Lagos State, Nigeria."
-        canonical="https://ehihomes.com/"
-        ogImage="https://ehihomes.com/house_hero.png"
+        canonical="https://ehihomes.ng/"
+        ogImage="https://ehihomes.ng/house_hero.png"
       />
       <Hero />
       <About />

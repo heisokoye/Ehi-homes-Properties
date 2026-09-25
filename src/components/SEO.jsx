@@ -16,6 +16,53 @@ const SEO = ({
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "RealEstateAgent",
+        "@id": `${siteUrl}#organization`,
+        "name": "EHI Homes & Properties Ltd",
+        "alternateName": "EHI Homes",
+        "url": siteUrl,
+        "logo": `${siteUrl}logo.png`,
+        "image": `${siteUrl}house_hero.png`,
+        "description": "EHI Homes & Properties Ltd helps individuals, families, and investors find secure real estate and land opportunities in Lagos, Nigeria through genuine, transparent, and well-documented solutions.",
+        "telephone": ["+2349037125053", "+2349161966606"],
+        "email": "ehihomesandpropertiesltd@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Five Point Business Hub, Opposite Community Primary School, Isheri Olofu Grace Land",
+          "addressLocality": "Isheri",
+          "addressRegion": "Lagos State",
+          "addressCountry": "NG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "6.6433",
+          "longitude": "3.3769"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Lagos State"
+          },
+          {
+            "@type": "City",
+            "name": "Isheri"
+          },
+          {
+            "@type": "Country",
+            "name": "Nigeria"
+          }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "priceRange": "$$"
+      },
+      {
         "@type": "RealEstateListing",
         "@id": `${siteUrl}#listing-isheri-grace-land`,
         "name": "Luxury Land Plots & Residential Estates - Isheri Grace Land, Lagos",
@@ -86,3 +133,4 @@ const SEO = ({
 };
 
 export default SEO;
+
